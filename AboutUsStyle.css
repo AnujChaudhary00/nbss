@@ -1,0 +1,46 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      scroll-behavior: smooth;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: bold;
+      background-image: url("wall.jpg");
+}
+
+.Board p
+{
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        text-shadow: 4px 4px 8px #000000;
+        font-size: 80px;
+        text-align: center;
+        margin:0;
+}
+
+.Board h3
+{
+      padding: 20px;
+      text-align: justify;
+      font-size: 35px;
+      text-shadow: .5px .5px .5px #000000;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#HomeButton
+{
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      box-shadow: 5px 5px 5px #000000;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      text-align: center;
+      position: relative;
+      float: right;
+      background-color: rgb(245,210,120);
+}
+#HomeButton:hover button {
+  padding-right: 25px;
+}
