@@ -60,7 +60,7 @@
   </div>
 
   <div class="corner-circle">
-    <a href="javascript:void(0);" class="nav-close"><span></span><span></span></a>
+    <a href="javascript:void(0);" class="nav-close"><span id="cross"></span><span id="cross"></span></a>
   </div>
 
  <div id="content">
@@ -197,7 +197,7 @@
 
 
          <div id="SideCards">
-              <div class="card mb-3" style="width:80%;margin: 100px;border-style: none;   box-shadow:.5px .5px 5px grey;">
+              <div class="card mb-3" id="slidecard">
                 <img class="card-img-top" src="SchoolImage.jpeg" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -208,14 +208,14 @@
               </div>
 
         <div class="card-columns" style="margin-top: 80px; padding: 80px;">
-          <div class="card" style="border-style: none;box-shadow:.5px .5px 5px grey; margin-top: 20px; margin-bottom: 50px;" >
+          <div class="card" id="NewsCards">
             <img class="card-img-top" src="1.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Card title that wraps to a new line</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
-          <div class="card p-3" style="border-style: none; box-shadow:.5px .5px 5px grey;margin-top: 5px; margin-bottom: 20px;"  >
+          <div class="card p-3" id="NewsCards">
             <img class="card-img-top" src="1.jpg" alt="Card image cap">
             <blockquote class="blockquote mb-0 card-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -226,7 +226,7 @@
               </footer>
             </blockquote>
           </div>
-          <div class="card"  style="border-style: none;box-shadow:.5px .5px 5px grey;" >
+          <div class="card"   id="NewsCards" >
             <img class="card-img-top" src="2.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -234,7 +234,7 @@
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
-          <div class="card bg-primary text-white text-center p-3"  style="border-style: none; box-shadow:.5px .5px 5px grey;" >
+          <div class="card bg-primary text-white text-center p-3"  id="NewsCards">
             <img class="card-img-top" src="1.jpg" alt="Card image cap">
             <blockquote class="blockquote mb-0">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
@@ -245,7 +245,7 @@
               </footer>
             </blockquote>
           </div>
-          <div class="card text-center" style="border-style: none; box-shadow:.5px .5px 5px grey;"  >
+          <div class="card text-center"  id="NewsCards">
             <div class="card-body">
               <img class="card-img-top" src="SchlLogo.png" alt="Card image cap">
               <h5 class="card-title">Card title</h5>
@@ -254,7 +254,7 @@
             </div>
           </div>
          
-          <div class="card" style="box-shadow:.5px .5px 5px grey;"  >
+          <div class="card"  id="NewsCards">
             <blockquote class="blockquote mb-0">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
               <footer class="blockquote-footer">
@@ -264,7 +264,7 @@
               </footer>
             </blockquote>
           </div>
-          <div class="card" style="border-style: none;box-shadow:.5px .5px 5px grey;" >
+          <div class="card"  id="NewsCards">
             <div class="card-body">
               <img class="card-img-top" src="2.jpg" alt="Card image cap">
               <h5 class="card-title">Card title</h5>
@@ -414,6 +414,7 @@ $(document).ready(function(){
 	$(".burger").click(function(){
 	$(".corner-circle").addClass("abc");
 	$(".full-nav").addClass("open");
+
 	});
 	
 	$(".nav-close").click(function(){
