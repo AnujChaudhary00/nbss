@@ -114,7 +114,7 @@ nav ul {
 }
 
 nav.black ul {
-  height: 100%;
+      height: 100%;
       background: white ;
       box-shadow: 5px 5px 10px grey;
 }
@@ -122,7 +122,8 @@ nav.black ul {
 nav ul li {
       color: black;
       display: inline-flex;
-      padding: 16px 40px;;
+      padding: 16px 40px;
+      position: relative;
 }
 
 nav ul li a {
@@ -134,11 +135,13 @@ nav ul li a {
 
 nav ul li:hover a 
 {
-  transition: .8s;
+      transition: .5s;
       text-shadow: 1px 1px 2px grey; 
       color: brown;
       text-decoration: none;
+      transform: scale(1.1);
 }
+
 
 .nav2 ul li a
 {
@@ -163,14 +166,23 @@ nav ul li:hover a
 .menu-icon {
       line-height: 60px;
       width: 100%;
-      background: #000;
+      background: white;
       text-align: right;
       box-sizing: border-box;
       padding: 15px 24px;
       cursor: pointer;
-      color: #fff;
+      color: black;
       display: none;
 }
+
+ .menu-icon img
+      {
+        width:10%; 
+        height:10%; 
+        float: left;
+        position: relative; 
+        top: 10px;"
+      }
 
 .picture-card {
   width: 250px;
@@ -191,7 +203,7 @@ nav ul li:hover a
 {
       position: absolute;
       top: 27px;
-      left: 20px;
+      left: 80px;
       padding: 1px;
       width: 40px;
       z-index: 1;
@@ -201,7 +213,7 @@ nav ul li:hover a
 {
       background:black;
       width: 30pxms linear all;
-      height: 1px;
+      height: 2px;
       display: block;
       transition: 300
 }
@@ -307,6 +319,17 @@ nav ul li:hover a
 
 .nav-close
 {
+      visibility: hidden;
+      display: block;
+      width:30px;
+      height: 30px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+}
+.nav-close1
+{
+      visibility: visible;
       display: block;
       width:30px;
       height: 30px;
@@ -319,7 +342,7 @@ nav ul li:hover a
 {
       background: black;
       width: 30px;
-      height: 1px;
+      height: 2px;
       display: block;
       position: absolute;
       top: 14px;
@@ -371,6 +394,11 @@ nav ul li:hover a
 {
   width: 50%;
   margin-left: 65px;
+}
+
+.Cards:hover img
+{
+  transform: scale(1.1);
 }
 
 .Title
@@ -501,6 +529,8 @@ border-style: none;
             margin-top: 16px;
       }
 
+
+
       nav ul {
             max-height: 0px;
             background: white;
@@ -522,9 +552,10 @@ border-style: none;
       }
 
       .menu-icon {
-            color: white;
+            color: black;
             display: block;
       }
+      
 
 
 .picture-card {
@@ -650,6 +681,7 @@ header {
   height: 100%;
   background-color: white;
   display: block;
+  font-size: 15px;
 }
 
 .footercontent
@@ -666,18 +698,22 @@ header {
 
 .footerheading
 {
-  display: block;
+  float: left;
 }
 
 .logocontent
-{
-  padding-top:auto;
+{ 
+  padding-top:auto; 
 }
 
 .address
 {
   padding-left: 10px;
   padding-top: 10px;
+}
+.burger
+{
+  display: none;
 }
 
 }

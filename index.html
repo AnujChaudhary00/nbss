@@ -21,6 +21,7 @@
             <nav>
 
                <div class="menu-icon">
+                   <img src="LogoMaker.png">
                   <i class="fa fa-bars fa-2x"></i>
                </div>
 
@@ -30,9 +31,10 @@
 
                <div class="menu">
                   <ul>
-                    <img src="LogoMaker.png" width="7%" style="margin-right: 120px;">
+                    <img src="LogoMaker.png" width="7%" style="position: relative; right:150px;">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="Admission.html">Admission<i class="fa fa-caret-down"></i></a></li>
+                    <li><a href="Admission.html">Admission</i></a></li>
+                    <li><a href="#">Academics<i class="fa fa-caret-down"></i></a></li>
                     <li><a href="AboutUs.html">About Us</a></li>
                     <li><a href="#headings">Gallery</a></li>
                     <li><a href="ContactUs.html">Contact Us</a></li>
@@ -217,14 +219,14 @@
           <div class="card" id="NewsCards">
             <img class="card-img-top" src="1.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Card Content</p>
             </div>
           </div>
           <div class="card p-3" id="NewsCards">
             <img class="card-img-top" src="1.jpg" alt="Card image cap">
             <blockquote class="blockquote mb-0 card-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p>Quotation</p>
               <footer class="blockquote-footer">
                 <small class="text-muted">
                   Someone famous in <cite title="Source Title">Source Title</cite>
@@ -235,15 +237,15 @@
           <div class="card"   id="NewsCards" >
             <img class="card-img-top" src="2.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural read-in to additional content.</p>
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Content</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
           <div class="card bg-primary text-white text-center p-3"  id="NewsCards">
             <img class="card-img-top" src="1.jpg" alt="Card image cap">
             <blockquote class="blockquote mb-0">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+              <p>Quotation</p>
               <footer class="blockquote-footer">
                 <small>
                   Someone famous in <cite title="Source Title">Source Title</cite>
@@ -254,15 +256,15 @@
           <div class="card text-center"  id="NewsCards">
             <div class="card-body">
               <img class="card-img-top" src="SchlLogo.png" alt="Card image cap">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Content</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
          
           <div class="card"  id="NewsCards">
             <blockquote class="blockquote mb-0">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p>Quotation</p>
               <footer class="blockquote-footer">
                 <small class="text-muted">
                   Someone famous in <cite title="Source Title">Source Title</cite>
@@ -273,8 +275,8 @@
           <div class="card"  id="NewsCards">
             <div class="card-body">
               <img class="card-img-top" src="2.jpg" alt="Card image cap">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title">Title</h5>
+              <p class="card-text">Content</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
@@ -352,12 +354,14 @@ $(document).ready(function(){
 	$(".burger").click(function(){
 	$(".corner-circle").addClass("abc");
 	$(".full-nav").addClass("open");
+  $(".nav-close").addClass("nav-close1");
 
 	});
 	
 	$(".nav-close").click(function(){
 	$(".full-nav").removeClass("open");
 	$(".corner-circle").removeClass("abc");
+  $(".nav-close").removeClass("nav-close1");
 	});
 });
 </script>

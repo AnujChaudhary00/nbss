@@ -45,7 +45,7 @@ body
 
 .Title
 {
-font-family: 'Amatic SC';
+ font-family: 'Amatic SC';
   margin: 10px;
   text-align: center;
 }
@@ -71,4 +71,32 @@ font-family: 'Amatic SC';
   transition: .8s;
   color:#E04A81;
    background-color: white;
+}
+
+@media(max-width: 650px)
+{
+	.mainheading
+{
+	 font-size: 50px;
+}
+
+.Title
+{
+  font-family: 'Amatic SC';
+  margin: auto;
+  text-align: center;
+  font-size: 
+}
+
+.Cards
+{
+  width: 100%;
+  margin: 20px;
+  display: inline-block;
+}
+.head
+{
+	height: 100px;
+}
+
 }
