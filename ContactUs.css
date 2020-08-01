@@ -177,6 +177,17 @@
  	display: block;
 
  }
+ #Arrow
+ {
+ 	width:30px;
+	height:30px; 
+	margin:20px 30px;
+ }
+
+ .area
+{
+	min-height: 100px;
+}
 }
 
 
