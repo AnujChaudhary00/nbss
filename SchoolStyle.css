@@ -13,7 +13,9 @@ html, body {
 body {
       font-family: "Helvetica Neue",sans-serif;
       font-weight: bold;
+      background-color: white;
 }
+
 
 header {
       width: 100%;
@@ -46,18 +48,10 @@ header {
   height: 100%;
 }
 
-.News ul li
-{
-      list-style: circle;
-      padding-left: 20px;
-      padding-right: 20px;
-      color: red;
-      font-family: 'Montserrat' !important;
-}
-
  #updateheading  
 {
-  text-align: justify;
+      background-color: rgb(250,100,100);
+      text-align: justify;
       padding-top:2px;
       font-weight: 800;
       text-align: center;
@@ -67,13 +61,25 @@ header {
 }
 .Updates .News
 {     
-    margin-left: 60px;
+      margin-left: 60px;
       margin-top: 5px;
       width:30%;
       height: 290px;
       color: rgb(0,0,100);
-      background-color: white ;
+      background-color: white;
       box-shadow:.5px .5px 5px grey;
+      border-style: dashed;
+      border-color:  rgb(250,100,100);
+}
+
+.News ul li
+{
+
+      list-style: circle;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: red;
+      font-family: 'Montserrat' !important;
 }
 
 
@@ -337,7 +343,7 @@ nav ul li:hover a
 
 .list-styled a
 {
-      color: white;
+      color: black;
       text-decoration: none;
 }
 
@@ -423,6 +429,11 @@ font-family: 'Amatic SC';
 width:80%;margin: 100px;
 border-style: none;  
  box-shadow:.5px .5px 5px grey;
+
+}
+#slidecard img
+{
+   filter: blur(1px);
 }
 
 #NewsCards
@@ -433,6 +444,42 @@ border-style: none;
     margin-bottom: 50px;
 }
 
+
+.foot
+{
+  padding-top: 15px;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  display: inline-flex;
+ font-family: 'Montserrat' !important;
+ font-size: 20px;
+  box-shadow: 10px .5px 10px grey;
+}
+
+.footercontent
+{
+  display: inline-flex;
+  padding-left: 70px;
+  width: 100%;
+  height: 100%; 
+}
+
+.footerheading img
+{
+  width: 100px;
+  height: 80px;
+}
+
+.footerheading
+{
+  display: inline-flex;
+}
+
+.logocontent
+{
+  padding-top: 20px;
+}
 
 @media(max-width: 1086px) { 
 
@@ -510,6 +557,7 @@ border-style: none;
 
   .Updates
 {  
+
       margin-top: 5px;
       padding: 0px;   
       display: block;
@@ -519,7 +567,7 @@ border-style: none;
 
 
 .Updates .News
-{     
+{   color:red;
     margin-left: 0px;
       margin-top: 5px;
       width:100%;
@@ -568,16 +616,12 @@ width:100%;margin: 0px;
   height: 100%;
 }
 
-
-
-
 .Cards
 {
   margin: 0px;
   width: 100%;
   display: block;
 }
-
 
 .Image img
 {
@@ -599,5 +643,41 @@ header {
       background:url("wall.jpg") no-repeat 50% 100%;
 }
 
+.foot
+{
+  padding: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: block;
+}
+
+.footercontent
+{
+  display: block;
+  padding-left: 10px;
+}
+
+.footerheading img
+{
+  width: 100px;
+  height: 80px;
+}
+
+.footerheading
+{
+  display: block;
+}
+
+.logocontent
+{
+  padding-top:auto;
+}
+
+.address
+{
+  padding-left: 10px;
+  padding-top: 10px;
+}
 
 }

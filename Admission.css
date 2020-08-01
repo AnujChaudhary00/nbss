@@ -1,0 +1,74 @@
+body
+{	
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box; 
+}
+.head
+{
+	height: 200px;
+}
+
+.main
+{
+	background-color: white ;
+	width: 100%;
+	height: 100%;
+}
+
+.mainheading
+{
+	text-align: center;
+	 font-family: 'Montserrat' !important;
+	 font-size: 80px;
+	 color: #282626;
+	 text-shadow: 2px 2px 15px grey;
+}
+
+
+
+.Cards
+{
+  width: 20%;
+  margin: 80px;
+  display: inline-block;
+  background-color: white ;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px grey;
+}
+
+.Image img
+{
+  width: 50%;
+  text-align: center;
+}
+
+.Title
+{
+font-family: 'Amatic SC';
+  margin: 10px;
+  text-align: center;
+}
+.content
+{
+  font-size: 35px;
+  margin: 2px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.content button
+{
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color:black;
+  border-radius: 8px;
+    box-shadow:.5px .5px 5px grey;
+}
+
+.content:hover .click1
+{
+  transition: .8s;
+  color:#E04A81;
+   background-color: white;
+}
