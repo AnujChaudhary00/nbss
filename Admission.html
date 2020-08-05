@@ -19,26 +19,44 @@
  	<div class="head">
 
             <nav>
-
-               <div class="menu-icon">
-                   <img src="LogoMaker.png">
-                  <i class="fa fa-bars fa-2x"></i>
-               </div>
-
                <div class="menu">
+                <i class="fa fa-bars fa-2x"  id="bar" style="margin:15px; cursor: pointer;" onclick="openNav()"></i>
                   <ul>
-                    <img src="LogoMaker.png" width="7%" style="position: relative; right:150px;">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="Admission.html">Admission<i class="fa fa-caret-down"></i></a></li>
+                    <li><a href="Admission.html">Admission</a></li>
+                    <li><a href="#">Academics<i class="fa fa-caret-down"></i></a>
+                        <ul>
+                          <li><a href="#">Link1.1</a></li>
+                          <li><a href="#">Link1.2</a></li>
+                          <li><a href="#">Link1.3</a></li>
+                          <li><a href="#">Link1.4</a></li>
+                        </ul>
+                    </li>
                     <li><a href="AboutUs.html">About Us</a></li>
                     <li><a href="ImageGallery.html">Gallery</a></li>
                     <li><a href="ContactUs.html">Contact Us</a></li>
                   </ul>
+
+                  <img src="LogoMaker.png">
                </div>
           </nav>
 
-
         </div>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a><img src="https://img.icons8.com/fluent/48/000000/laptop.png"/> Online Library</a>
+    <a><img src="https://img.icons8.com/plasticine/48/000000/student-male.png"/>Student Details</a>
+    <a><img src="https://img.icons8.com/doodle/48/000000/t-shirt--v1.png"/>Buy dress</a>
+    <a><img src="https://img.icons8.com/doodle/48/000000/books.png"/>Buy Books</a>
+    <a><img src="https://img.icons8.com/emoji/48/000000/woman-teacher.png"/>Faculty Details</a>
+    <a href="index.html"><img src="https://img.icons8.com/cotton/64/000000/home--v2.png"/>Home</a>
+    <a href="Admission.html"><img src="https://img.icons8.com/color/48/000000/backpack.png"/>Admission</a>
+    <a href="AboutUs.html"><img src="https://img.icons8.com/color/48/000000/about-us-female.png"/>About Us</a>
+    <a href="ImageGallery.html"><img src="https://img.icons8.com/plasticine/100/000000/stack-of-photos.png"/>Gallery</a>
+    <a href="ContactUs.html"><img src="https://img.icons8.com/fluent/48/000000/phone-disconnected.png"/>Contact Us</a>
+</div>
 
 
 <div class="main2">
@@ -221,7 +239,7 @@
 
 
  <script>
- 	 $(document).ready(function() {
+ 	 $(document).ready(function(){
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
@@ -231,11 +249,11 @@
 
       $(window).on("scroll", function() {
             if($(window).scrollTop()) {
-                  $('nav').addClass('black');
+                  $('.First').addClass('srl');
             }
 
             else {
-                  $('nav').removeClass('black');
+                  $('.First').removeClass('srl');  
             }
       })
  </script>
@@ -246,4 +264,14 @@ window.scroll({
   left: 0, 
   behavior: 'smooth'
 });
+
+
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "320px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 </script>
