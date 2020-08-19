@@ -32,6 +32,44 @@ html, body {
       width: 100%;
 }
 
+#AlertBack
+{
+  width: 1350px;
+  height: 800px;
+  position: fixed;
+  background:rgba(0,0,0,0.5);
+  z-index: 100;
+  display: block;
+}
+
+#alert {
+  padding: 20px;
+  background-color:black;
+  color: white;
+  position: fixed;
+  width: 600px;
+  height: 300px;
+  z-index: 100;
+  top: 30%;
+  left: 25%;
+  
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 35px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
 
 
 .some-element {
@@ -529,8 +567,6 @@ border-style: none;
 .ImageSide
 {
  margin-left:5%; 	
-
- 
 }
 .ImageSide img
 {
@@ -550,8 +586,6 @@ box-shadow:0px 25px 30px rgba(0,0,0,.5);
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-
-
 
 .counteStrip
 { 

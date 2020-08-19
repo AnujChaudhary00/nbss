@@ -15,6 +15,14 @@
      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+     <script>
+       function CloseAlertBox()
+       {
+         document.getElementById('AlertBack').style.display='none';
+         document.getElementById('alert').style.display='none';
+       }
+     </script>
 </head>
 <body>
     <div class="First">
@@ -23,6 +31,21 @@
       <small id="slogan">Imparting quality education since 1998</small>           
     </div>
 
+    <div id="AlertBack"></div>
+    <div id="alert">
+      <span class="closebtn" onclick="CloseAlertBox()">&times;</span> 
+      <strong style="text-align: center;">Notice</strong><br/>Temporarily  this website is on development, So the following 
+      functionality may not work.
+      <ul>
+        <li>Academics</li>
+        <li>Online Library</li>
+        <li>Buy Books</li>
+        <li>Any registration</li>
+        <li>Student details</li>
+        <li>Buy dress</li>
+        <li>Faculty details</li>
+      </ul>
+    </div>
  <div class="wrapper">
         <header>
            <nav>
@@ -33,7 +56,7 @@
                    <li><a href="Admission.html">Admission</a></li>
                    <li><a href="#">Academics<i class="fa fa-caret-down"></i></a>
                        <ul>
-                         <li><a href="#">Faculty and Staff</a></li>
+                         <li><a href="#">Faculty</a></li>
                          <li><a href="#">Exam</a></li>
                          <li><a href="#">Syllabus</a></li>
                          <li><a href="#">Result</a></li>
@@ -221,6 +244,10 @@
 </div>
 
 
+
+
+
+
 <div class="counteStrip">
   <div class="counterCard"><img  id="burger" src="children.png"/><h1 class="counter">2000</h1></div>
   <div class="counterCard"><img  id="wine" src="classroom.png"/><h1 class="counter">100</h1></div>
@@ -374,3 +401,5 @@ $('.counter').counterUp({
     time: 1000
 });
 </script>
+
+
