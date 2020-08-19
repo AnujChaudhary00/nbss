@@ -72,9 +72,6 @@ html, body {
 
 
 
-.some-element {
-  overflow-anchor: none;
-}
 
 body {
       font-family: "Helvetica Neue",sans-serif;
@@ -640,9 +637,10 @@ box-shadow:0px 25px 30px rgba(0,0,0,.5);
 
   .First
   {
-
+    width: auto;
     text-align: center;
     font-size: 28px;
+    overflow-x: hidden;
   }
   .First img
   {
@@ -693,7 +691,7 @@ box-shadow:0px 25px 30px rgba(0,0,0,.5);
             background: white;
             overflow: hidden;
       }
-
+    
       nav.black ul {
             background: white;
       }
@@ -878,6 +876,7 @@ header {
   .menu
   {
     box-shadow: none;
+    width:98%;
   }
 
   .counteStrip
@@ -907,7 +906,7 @@ header {
 
 .CardBody
 {
- width: 100%;
+ width: 85%;
  height: 100%;
  display: block;
  padding: 10px;
@@ -915,7 +914,7 @@ header {
 
 .ImageSide
 {
- margin-left:0%;   
+ margin: auto;
 }
 .ImageSide img
 {
@@ -926,11 +925,34 @@ header {
 .CardContent
 {
  padding-left: 0px;
- margin:5px;
+ margin:auto;
  width: 100%;
  text-align: justify;
  color: rgba(0,0,0,0.55);
 
+}
+
+#AlertBack
+{
+  width: 100%;
+  height: 100%;
+}
+
+#alert {
+  left: 20%;
+  top:20%;
+  width: 60%;
+  height: 60%;
+
+  
+}
+
+.closebtn {
+
+}
+
+.closebtn:hover {
+  color: black;
 }
 
 
