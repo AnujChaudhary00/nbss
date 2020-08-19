@@ -831,4 +831,59 @@ header {
     box-shadow: none;
   }
 
+  .counteStrip
+{ 
+  width: 100%;
+  margin-top:80px;
+  display: block;
+}
+.counterCard
+{
+  width: 100%;
+}
+
+.counterCard img:hover
+{
+  transform: rotateY(180deg);
+    text-align: center;
+  transition: transform 1s;
+}
+
+.counterCard img
+{
+  width: 70%;
+}
+
+
+
+.CardBody
+{
+ width: 100%;
+ height: 100%;
+ display: block;
+ padding: 10px;
+}
+
+.ImageSide
+{
+ margin-left:0%;   
+}
+.ImageSide img
+{
+ width: 100%;
+ border:10px solid white;
+}
+
+.CardContent
+{
+ padding-left: 0px;
+ margin:5px;
+ width: 100%;
+ text-align: justify;
+ color: rgba(0,0,0,0.55);
+
+}
+
+
+
 }
