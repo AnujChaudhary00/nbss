@@ -41,7 +41,7 @@ html, body {
 body {
       font-family: "Helvetica Neue",sans-serif;
       font-weight: bold;
-      background-color: #CFD8DC;
+      background-color:white;
 }
 
 
@@ -236,7 +236,7 @@ nav ul ul
 .Updates
 {  
       padding: 80px;   
-      margin-top: 80px;
+      margin-top: 10px;
       display: inline-flex;
       font-weight: 800;
       width: 100%;
@@ -507,14 +507,23 @@ border-style: none;
   color: #191970;
 }
 
+.CenterText
+{
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  margin-top: 30px;
+  font-family: Arial;
+}
 
 .CardBody
 {
   margin-top: 50px;
-  width: 100%;
+  width: 85%;
+  margin-left: 6%;;
   height: 100%;
   display: inline-flex;
   padding: 20px;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .ImageSide
@@ -525,7 +534,7 @@ border-style: none;
 }
 .ImageSide img
 {
- width: 500px;
+ width: 300px;
  border:10px solid white;
 box-shadow:0px 25px 30px rgba(0,0,0,.5);
 }
