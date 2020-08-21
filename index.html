@@ -23,6 +23,50 @@
          document.getElementById('alert').style.display='none';
        }
      </script>
+
+<script>
+  window.onload=function()
+  {
+      var x=document.querySelectorAll(".content");
+      var y=document.querySelector("#n");
+
+      window.addEventListener('scroll',scrollEffect);
+
+
+      function scrollEffect()
+      {
+          if(window.scrollY>=400)
+          {
+            x[0].style.opacity='1';
+              x[0].style.transform='translateX(0px)';
+              x[0].style.transition='1s ease-in-out';
+              x[1].style.opacity='1';
+              x[1].style.transform='translateX(0px)';
+              x[1].style.transition='1s ease-in-out';
+              x[2].style.opacity='1';
+              x[2].style.transform='translateX(0px)';
+              x[2].style.transition='1s ease-in-out';
+              y.style.opacity='1';
+              y.style.transform='translateX(0px)';
+              y.style.transition='1s ease-in-out';
+
+
+           
+          }
+          else{
+              x[0].style.opacity='0';
+              x[0].style.transform='translateX(50px)';
+              x[1].style.opacity='0';
+              x[1].style.transform='translateX(50px)';
+              x[2].style.opacity='0';
+              x[2].style.transform='translateX(50px)';
+              y.style.opacity='0';
+              y.style.transform='translateX(50px)';
+
+          }
+      }
+  }
+</script>
 </head>
 <body>
     <div class="First">
@@ -71,7 +115,7 @@
               </div>
          </nav>
              <div id="Board">
-                <p1 style="color: #F5F5F5">Welcome To <br>New Bal Shiksha Sadan</p1>
+                <p1 style="color: #F5F5F5" id="welcome">Welcome To <br>New Bal Shiksha Sadan</p1>
              </div>
 
        </header>
@@ -187,7 +231,7 @@
 
  </div>
 
-<div class="CenterText"><h1>News And Updates</h1></div>
+<div class="CenterText"><h1 id="n">News And Updates</h1></div>
 <div class="Updates">
 
 <div class="frame">
@@ -226,13 +270,13 @@
  </div>
 
   <div class="CenterText"><h1>Vision</h1></div>
- <div class="MainContent">
+ <div class="MainContent" id="CCC">
 	<div class="CardBody">
 		<div class="ImageSide">
 			<img src="Mother.jpeg">
 		</div>
 		<div class="CardContent">
-			<p>New Bal Shiksha Sadan is one of the prestigious school which is known by its quality of education. 
+			<p id="ap">New Bal Shiksha Sadan is one of the prestigious school which is known by its quality of education. 
         it is also one of the oldest school in meerut which continiously serving the nation and it's constitution
          by making the education accessible even in remote areas.It was established by hounarable 
          Mr. Bijendra Chaudhary and Mrs. Shiksha Devi in 1998 with the aim of making people aware about

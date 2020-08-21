@@ -340,6 +340,7 @@ nav ul ul
         padding-left: 50px;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
         text-shadow: 4px 4px 8px #000000;
+        transition: 1s ease-in-out;
 }
 .menu-icon {
       line-height: 60px;
